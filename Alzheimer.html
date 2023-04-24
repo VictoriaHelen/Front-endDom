@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<title>Atividade Web 2</title>
+<head>  
+    <link rel="stylesheet" href="Alzheimer.css">
+    <script src="Alzheimer2.js"></script>
+  </head>
+
+  <body>
+<header>
+  <h1>◑ω◐  Alzheimer  ◑ω◐</h1>
+  <h2 id="h2Div">Não esqueça coisas ao sair de casa</h1>
+
+</header>
+
+  <main>
+
+    <form id="formCadastro" action="testeDados.html">
+          <label>Local a não ser esquecido</label>
+          <br>
+              <select name="lugares" id="lugares" onchange="Lugar()";>
+           <option value="">NÃO ESQUEÇA DE IR</option>
+             <option value="1">Hospital</option>
+                <option value="2">Biblioteca</option>
+                <option value="3">Padaria</option>
+                <option value="4">Supermercado</option>
+              </select>
+              
+              <br>
+              
+              <label> Endereço do local para não esquecer</label>
+          <br>
+          <select name="address" id="address">
+              <option value="">Selecione uma endereço</option>
+              </select>
+              <br>
+              <option value="">Data de hoje</option>
+              <input type="date" id="data" ></input>          
+          
+                      
+      </form>
+
+      <input type="text" id="texto" placeholder="Objetos para não esquecer...">
+      
+      <input type="submit" id="bt" class="btn-add" onclick="comandos()" >
+      <br><br>
+</main>
+  
+<footer>
+    <h4>
+        Um oferecimento de : Esquecimento.
+    </h4>
+
+<p>
+    Criado por &copy; Victória Helen e Nicoly Santana.
+</p>
+</footer>
+  </body>
